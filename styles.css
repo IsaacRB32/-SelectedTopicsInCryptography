@@ -139,8 +139,8 @@
         }
 
         .video-item {
-            flex: 1 1 400px;
-            max-width: 560px; /* Tamaño clásico de video */
+            flex: 1 1 280px;
+            max-width: 400px; /* Tamaño clásico de video */
             background: #f8fafc;
             border-radius: 20px;
             padding: 15px;
@@ -169,7 +169,7 @@
         }
 
         .video-single video {
-            max-width: 560px;
+            max-width: 400px;
             width: 100%;
             border-radius: 20px;
             box-shadow: 0 15px 30px rgba(0,0,0,0.15);
