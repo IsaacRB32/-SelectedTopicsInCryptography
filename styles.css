@@ -1,0 +1,232 @@
+/* ===== RESET Y ESTILOS BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+            background: #f0f2f5;
+            color: #1e2b37;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* ===== CONTENEDOR PRINCIPAL ===== */
+        section, header, footer {
+            max-width: 1200px;
+            margin: 0 auto 30px auto;
+            background: white;
+            border-radius: 28px;
+            padding: 30px;
+            box-shadow: 0 20px 40px -10px rgba(0,20,30,0.15);
+        }
+
+        /* ===== ENCABEZADO ===== */
+        .hero {
+            text-align: center;
+            background: linear-gradient(145deg, #1e2b37, #2c3e50);
+            color: white;
+            padding: 50px 30px;
+        }
+
+        .perfil {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        /* ===== TÍTULOS ===== */
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: #1e2b37;
+            border-left: 8px solid #3b82f6;
+            padding-left: 20px;
+        }
+
+        /* ===== LISTAS ===== */
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="%233b82f6"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>') left center no-repeat;
+            background-size: 22px;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        /* ===== ENLACES ===== */
+        .redes a {
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            padding: 12px 28px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 40px;
+            font-weight: 500;
+            transition: 0.2s;
+            box-shadow: 0 5px 10px rgba(59,130,246,0.3);
+        }
+
+        .redes a:hover {
+            background: #2563eb;
+            transform: translateY(-3px);
+        }
+
+        /* ===== HOBBIES (GRID) ===== */
+        .hobbies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .hobby-card {
+            background: #fafcff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border: 1px solid #eef2f6;
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+        }
+
+        .hobby-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hobby-card p {
+            padding: 22px;
+            text-align: justify;
+            color: #2d3e4f;
+        }
+
+        /* ===== VIDEOS ===== */
+        .videos-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .video-item {
+            flex: 1 1 400px;
+            max-width: 560px; /* Tamaño clásico de video */
+            background: #f8fafc;
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .video-item video {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            display: block;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .video-item p {
+            margin-top: 10px;
+            font-weight: 500;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        /* Sección individual de video (PGP) */
+        .video-single {
+            display: flex;
+            justify-content: center;
+        }
+
+        .video-single video {
+            max-width: 560px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        /* ===== BOTONES ===== */
+        .boton {
+            display: inline-block;
+            background: linear-gradient(145deg, #3b82f6, #1e4b8f);
+            color: white;
+            padding: 14px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 5px 10px 5px 0;
+            border: none;
+            cursor: pointer;
+            transition: 0.2s;
+            box-shadow: 0 8px 18px rgba(59,130,246,0.4);
+        }
+
+        .boton:hover {
+            background: linear-gradient(145deg, #2563eb, #1e3a8a);
+            transform: scale(1.02);
+        }
+
+        /* ===== TEXTO LARGO (CRIPTOGRAFÍA) ===== */
+        .biografia p {
+            font-size: 1.05rem;
+            text-align: justify;
+            margin: 15px 0;
+            background: #f8fafc;
+            padding: 25px;
+            border-radius: 20px;
+        }
+
+        /* ===== PIE DE PÁGINA ===== */
+        footer {
+            text-align: center;
+            background: #1e2b37;
+            color: white;
+            padding: 25px;
+            border-radius: 40px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 700px) {
+            body {
+                padding: 10px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.7rem;
+            }
+            .video-item {
+                max-width: 100%;
+            }
+        }
